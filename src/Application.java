@@ -1,6 +1,5 @@
-import model.Chicken;
-import model.Cock;
-import model.Hen;
+import interfaces.Transportation;
+import model.*;
 
 public class Application {
 
@@ -19,6 +18,31 @@ public class Application {
                     System.out.println("cock:" + cockNumber + " hen:" + henNumber + " chicken:" + chickenNumber);
                 }
             }
+        }
+        // Question 2
+        Transportation car = new Car();
+        if (car.cost() <= 500) {
+            System.out.println("Xiaoming can choose car.");
+        } else {
+            System.out.println("Xiaoming can't choose car.");
+        }
+        Transportation bus = new Bus();
+        if (bus.cost() <= 500) {
+            System.out.println("Xiaoming can choose bus.");
+        } else {
+            System.out.println("Xiaoming can't choose bus.");
+        }
+        Transportation train = new Train();
+        if (train.cost() <= 500) {
+            System.out.println("Xiaoming can choose train.");
+        } else {
+            System.out.println("Xiaoming can't choose train.");
+        }
+        Transportation plane = new Plane();
+        if (plane.cost() <= 500) {
+            System.out.println("Xiaoming can choose plane.");
+        } else {
+            System.out.println("Xiaoming can't choose plane.");
         }
     }
 }
