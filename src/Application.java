@@ -3,6 +3,8 @@ import model.*;
 
 public class Application {
 
+    private static final int WUHAN_TO_BEIJING_COST = 500;
+
     public static void main(String[] args) {
         // Question 1
         Cock cock = new Cock();
@@ -21,25 +23,25 @@ public class Application {
         }
         // Question 2
         Transportation car = new Car();
-        if (car.cost() <= 500) {
+        if (car.cost() <= WUHAN_TO_BEIJING_COST) {
             System.out.println("Xiaoming can choose car.");
         } else {
             System.out.println("Xiaoming can't choose car.");
         }
         Transportation bus = new Bus();
-        if (bus.cost() <= 500) {
+        if (bus.cost() <= WUHAN_TO_BEIJING_COST) {
             System.out.println("Xiaoming can choose bus.");
         } else {
             System.out.println("Xiaoming can't choose bus.");
         }
         Transportation train = new Train();
-        if (train.cost() <= 500) {
+        if (train.cost() <= WUHAN_TO_BEIJING_COST) {
             System.out.println("Xiaoming can choose train.");
         } else {
             System.out.println("Xiaoming can't choose train.");
         }
         Transportation plane = new Plane();
-        if (plane.cost() <= 500) {
+        if (plane.cost() <= WUHAN_TO_BEIJING_COST) {
             System.out.println("Xiaoming can choose plane.");
         } else {
             System.out.println("Xiaoming can't choose plane.");
